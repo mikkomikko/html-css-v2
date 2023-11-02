@@ -7,52 +7,58 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
   </head>
   <body>
     <!-- All page content must be contained by landmarks -->
     <!-- https://dequeuniversity.com/rules/axe/4.1/region -->
     <header class="site-header">
-      <div class="logo">
-        <a href="index.html">
-          <img src="images/logoipsum-288.svg" alt="Go to homepage" />
-        </a>
+      <div class="wrapper wrapper--large u-flex">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logoipsum-288.svg" alt="Go to homepage" />
+          </a>
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="index.html" aria-current="page">Frontpage</a>
+            </li>
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="faq.html">FAQ</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-navigation">
-        <ul>
-          <li>
-            <a href="index.html" aria-current="page">Frontpage</a>
-          </li>
-          <li>
-            <a href="products.html">Products</a>
-          </li>
-          <li>
-            <a href="contact.html">Contact</a>
-          </li>
-          <li>
-            <a href="faq.html">FAQ</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main>
-      <h1>Hello, welcome to my homepage!</h1>
-      <p>
-        Lorem ipsum dolor sit amet
-        <a href="someotherpage.html">consectetur adipisicing</a> elit. Autem,
-        quidem. Veritatis laboriosam tenetur sit, eos, voluptate nemo nesciunt
-        voluptatem aperiam magnam officia nulla harum explicabo consectetur,
-        eius temporibus nisi nihil?
-      </p>
-      <h2>Second heading</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est esse,
-        perferendis blanditiis enim consequuntur modi. Officiis eum animi, quae
-        adipisci quasi, quisquam, inventore aliquam quo ad hic magnam in iure?
-      </p>
-      <h3>Third heading level</h3>
-      <h4>Fourth heading level</h4>
-      <h5>Fifth heading level</h5>
-      <h6>Sixth heading level</h6>
+      <div class="wrapper">
+        <h1>Hello, welcome to my homepage!</h1>
+        <p>
+          Lorem ipsum dolor sit amet
+          <a href="someotherpage.html">consectetur adipisicing</a> elit. Autem,
+          quidem. Veritatis laboriosam tenetur sit, eos, voluptate nemo nesciunt
+          voluptatem aperiam magnam officia nulla harum explicabo consectetur,
+          eius temporibus nisi nihil?
+        </p>
+        <h2>Second heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est esse,
+          perferendis blanditiis enim consequuntur modi. Officiis eum animi,
+          quae adipisci quasi, quisquam, inventore aliquam quo ad hic magnam in
+          iure?
+        </p>
+        <h3>Third heading level</h3>
+        <h4>Fourth heading level</h4>
+        <h5>Fifth heading level</h5>
+        <h6>Sixth heading level</h6>
+      </div>
     </main>
     <footer></footer>
   </body>

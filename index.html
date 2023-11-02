@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/accessibility.css" />
   </head>
   <body>
+    <!-- https://webaim.org/techniques/skipnav/ -->
+    <!-- https://css-tricks.com/how-to-create-a-skip-to-content-link/ -->
+    <a href="#maincontent" class="skip-to-content-link">Skip to main content</a>
     <!-- All page content must be contained by landmarks -->
     <!-- https://dequeuniversity.com/rules/axe/4.1/region -->
     <header class="site-header">
@@ -40,7 +44,7 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main id="maincontent">
       <div class="wrapper">
         <h1>Hello, welcome to my homepage!</h1>
         <p>

@@ -1,0 +1,30 @@
+.hero {
+  display: grid;
+  grid-template-areas: "hero";
+  height: 60vh;
+  max-height: 600px;
+  place-items: center;
+  background-color: rgba(43, 52, 151, 0.7);
+  margin-bottom: 2rem;
+}
+
+.hero > * {
+  grid-area: hero;
+}
+
+.hero__content {
+  z-index: 1;
+  text-align: center;
+}
+
+.hero__content h1,
+.hero__content p {
+  color: #FFF
+}
+
+.hero img {
+  object-fit: cover;
+  height: min(60vh, 600px);
+  width: 100%;
+  z-index: -1;
+}

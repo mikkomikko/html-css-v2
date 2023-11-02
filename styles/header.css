@@ -1,7 +1,7 @@
 .site-header {
   background-color: #FFF;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   margin-bottom: 2rem;
 }
 
@@ -19,5 +19,29 @@
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 1.5rem
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.main-navigation li {
+  display: flex;
+}
+
+.main-navigation a {
+  display: flex;
+  align-items: center;
+  padding: 0 1.2em;
+  text-decoration: none;
+  color: var(--color-gray-600);
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
+}
+
+.main-navigation a:hover {
+  color: var(--color-gray-900);
+}
+
+.main-navigation a[aria-current="page"] {
+  color: #2B3499;
+  border-color: #FF6C22;
 }

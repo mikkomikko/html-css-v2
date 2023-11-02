@@ -1,6 +1,13 @@
 :root {
   --color-gray-100: #f6f8fa;
-  --color-gray-900: #161616;
+  --color-gray-200: #eaeef2;
+  --color-gray-300: #d0d7de;
+  --color-gray-400: #afb8c1;
+  --color-gray-500: #8a939d;
+  --color-gray-600: #646c75;
+  --color-gray-700: #404953;
+  --color-gray-800: #232b34;
+  --color-gray-900: #0e161d;
 
   --step--2: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
   --step--1: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);

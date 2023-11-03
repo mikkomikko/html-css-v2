@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Academy Learing Page</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/accessibility.css" />
+    <link rel="stylesheet" href="styles/grid.css" />
+  </head>
+  <body>
+    <!-- https://webaim.org/techniques/skipnav/ -->
+    <!-- https://css-tricks.com/how-to-create-a-skip-to-content-link/ -->
+    <a href="#maincontent" class="skip-to-content-link">Skip to main content</a>
+    <!-- All page content must be contained by landmarks -->
+    <!-- https://dequeuniversity.com/rules/axe/4.1/region -->
+    <header class="site-header">
+      <div class="wrapper wrapper--large u-flex">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logoipsum-288.svg" alt="Go to homepage" />
+          </a>
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="index.html" aria-current="page">Frontpage</a>
+            </li>
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="faq.html">FAQ</a>
+            </li>
+            <li>
+              <a href="login.html">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="maincontent">
+      <!-- https://css-tricks.com/snippets/css/complete-guide-grid/ -->
+      <div class="grid-demo">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div class="span2">7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

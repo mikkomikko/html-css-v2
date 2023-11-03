@@ -1,0 +1,21 @@
+/* Grid container styles (the parent) */
+.grid-demo {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(5, 1fr);
+  /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+}
+
+/* Grid item styles (the children) */
+.grid-demo > div {
+  background-color: #b82b2b;
+  color: #FFF;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.span2 {
+  grid-column: span 2;
+  grid-row: span 2;
+}

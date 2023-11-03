@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  border-radius: 14px;
+  padding-bottom: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.09), 0 1px 2px hsla(0, 0%, 0%, 0.06);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.card .button {
+  display: block;
+  text-align: center;
+  margin-top: auto;
+}
+
+.card .price {
+  font-size: 0.875rem;
+  color: var(--color-gray-600);
+  margin-bottom: 0.5rem;
+}
+
+.card .description {
+  font-size: 0.9rem;
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+}
+
+.card img {
+  max-width: 100%;
+  object-fit: contain;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.card > :not(img) {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}

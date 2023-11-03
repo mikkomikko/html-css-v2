@@ -19,3 +19,13 @@
   grid-column: span 2;
   grid-row: span 2;
 }
+
+/* Product grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 2rem;
+}

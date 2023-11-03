@@ -33,7 +33,8 @@
 
 .card img {
   max-width: 100%;
-  object-fit: contain;
+  height: 180px;
+  object-fit: cover;
   align-self: center;
   margin-bottom: 1rem;
 }

@@ -22,3 +22,12 @@ label {
   font-size: 1rem;
   transition: all 0.16s linear;
 }
+
+.form-input:focus-visible {
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0px 0px 0px 4px var(--color-accent-light);
+}

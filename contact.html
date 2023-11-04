@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Academy Learing Page</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/accessibility.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/buttons.css" />
+  </head>
+  <body>
+    <!-- https://webaim.org/techniques/skipnav/ -->
+    <!-- https://css-tricks.com/how-to-create-a-skip-to-content-link/ -->
+    <a href="#maincontent" class="skip-to-content-link">Skip to main content</a>
+    <!-- All page content must be contained by landmarks -->
+    <!-- https://dequeuniversity.com/rules/axe/4.1/region -->
+    <header class="site-header">
+      <div class="wrapper wrapper--large u-flex">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logoipsum-288.svg" alt="Go to homepage" />
+          </a>
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="index.html" aria-current="page">Frontpage</a>
+            </li>
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="faq.html">FAQ</a>
+            </li>
+            <li>
+              <a href="login.html">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="maincontent">
+      <div class="wrapper">
+        <h1>Contact us</h1>
+        <form method="post" action="https://jsonplaceholder.typicode.com/posts">
+          <div class="form-row">
+            <label for="name">Your name</label>
+            <input
+              id="name"
+              class="form-input"
+              name="name"
+              type="text"
+              autocomplete="given-name"
+            />
+          </div>
+          <!-- button's inside forms will have type="submit" by default -->
+          <!-- if you need some other kind of button inside a form (like show password) -->
+          <!-- add it type="button" -->
+          <button type="submit" class="button">Send</button>
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

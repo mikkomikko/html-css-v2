@@ -7,7 +7,7 @@ details {
   border: 2px solid transparent;
 }
 
-details:hover {
+details:has(summary:hover) {
   border-color: var(--color-gray-400);
 }
 
@@ -21,7 +21,41 @@ details[open] summary {
 }
 
 summary {
+  position: relative;
   font-size: 1.2rem;
   color: var(--color-gray-900);
   cursor: pointer;
+}
+
+/* Hide the default arrow */
+summary::marker {
+  content: none;
+}
+
+/* Make a plus icon using before and after pseudo elements */
+summary::before,
+summary::after {
+  content: "";
+  width: 0.75em;
+  height: 0;
+  border-bottom: 3px solid var(--color-primary);
+  position: absolute;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+summary::before {
+  top: calc(50% + 1px);
+}
+
+summary::after {
+  top: calc(50%);
+  transform: rotate(90deg);
+  transform-origin: 50% 50%;
+}
+
+/* when opened, rotate the plus icon's 
+vertical line back on top of the horizontal line */
+[open] summary::after {
+  transform: rotate(0deg);
 }

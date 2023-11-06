@@ -1,0 +1,27 @@
+details {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  color: var(--color-gray-600);
+  border: 2px solid transparent;
+}
+
+details:hover {
+  border-color: var(--color-gray-400);
+}
+
+details[open] {
+  border-color: var(--color-primary);
+  padding-bottom: 1.5rem;
+}
+
+details[open] summary {
+  margin-bottom: 0.5em;
+}
+
+summary {
+  font-size: 1.2rem;
+  color: var(--color-gray-900);
+  cursor: pointer;
+}

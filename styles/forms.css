@@ -49,6 +49,7 @@ fieldset {
 .field-hint {
   color: var(--color-gray-600);
   margin-bottom: 0.5em;
+  font-size: 0.875rem;
 }
 
 .radio-label {

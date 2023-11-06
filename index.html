@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/accessibility.css" />
     <link rel="stylesheet" href="styles/hero.css" />
     <link rel="stylesheet" href="styles/buttons.css" />
+    <link rel="stylesheet" href="styles/forms.css" />
     <link rel="stylesheet" href="styles/dialog.css" />
   </head>
   <body>
@@ -77,22 +78,46 @@
         <h6>Sixth heading level</h6>
       </div>
       <dialog data-modal>
-        <p>This is a modal.</p>
-        <button data-close-modal>Close</button>
+        <h2>Login</h2>
+        <form>
+          <div class="form-row">
+            <label for="email">
+              Username
+              <div class="field-hint">It's your email</div>
+            </label>
+            <input
+              id="email"
+              class="form-input"
+              name="email"
+              type="email"
+              autocomplete="email"
+            />
+          </div>
+          <div class="form-row">
+            <label for="password">Password</label>
+            <input
+              id="password"
+              class="form-input"
+              name="password"
+              type="password"
+            />
+          </div>
+          <div class="button-row">
+            <button class="button">Login</button>
+            <button formmethod="dialog" class="button button--secondary">
+              Cancel
+            </button>
+          </div>
+        </form>
       </dialog>
     </main>
     <footer></footer>
     <script>
       const openButton = document.querySelector("[data-open-modal]");
-      const closeButton = document.querySelector("[data-close-modal]");
       const modal = document.querySelector("[data-modal]");
 
       openButton.addEventListener("click", () => {
         modal.showModal();
-      });
-
-      closeButton.addEventListener("click", () => {
-        modal.close();
       });
     </script>
   </body>

@@ -29,13 +29,13 @@
         <nav class="main-navigation">
           <ul>
             <li>
-              <a href="index.html" aria-current="page">Frontpage</a>
+              <a href="index.html">Frontpage</a>
             </li>
             <li>
               <a href="products.html">Products</a>
             </li>
             <li>
-              <a href="contact.html">Contact</a>
+              <a href="contact.html" aria-current="page">Contact</a>
             </li>
             <li>
               <a href="faq.html">FAQ</a>
@@ -83,6 +83,40 @@
               rows="5"
               class="form-input"
             ></textarea>
+          </div>
+          <div class="form-row">
+            <fieldset>
+              <legend>I want to complain about</legend>
+              <label>
+                <input type="checkbox" value="quality" />
+                Product quality
+              </label>
+              <label>
+                <input type="checkbox" value="prices" />
+                Prices
+              </label>
+              <label>
+                <input type="checkbox" value="design" />
+                Design of this website
+              </label>
+            </fieldset>
+          </div>
+          <div class="form-row">
+            <fieldset>
+              <legend>What is your legal sex?</legend>
+              <div class="field-hint">
+                For regulatory reasons you can only select one of these two
+                options.
+              </div>
+              <label>
+                <input type="radio" name="gender" value="female" />
+                Female
+              </label>
+              <label>
+                <input type="radio" name="gender" value="male" />
+                Male
+              </label>
+            </fieldset>
           </div>
           <!-- button's inside forms will have type="submit" by default -->
           <!-- if you need some other kind of button inside a form (like show password) -->

@@ -40,7 +40,7 @@
               <a href="faq.html">FAQ</a>
             </li>
             <li>
-              <a href="login.html">Login</a>
+              <button data-open-modal>Login</button>
             </li>
           </ul>
         </nav>
@@ -75,7 +75,24 @@
         <h5>Fifth heading level</h5>
         <h6>Sixth heading level</h6>
       </div>
+      <dialog data-modal>
+        <p>This is a modal.</p>
+        <button data-close-modal>Close</button>
+      </dialog>
     </main>
     <footer></footer>
+    <script>
+      const openButton = document.querySelector("[data-open-modal]");
+      const closeButton = document.querySelector("[data-close-modal]");
+      const modal = document.querySelector("[data-modal]");
+
+      openButton.addEventListener("click", () => {
+        modal.showModal();
+      });
+
+      closeButton.addEventListener("click", () => {
+        modal.close();
+      });
+    </script>
   </body>
 </html>

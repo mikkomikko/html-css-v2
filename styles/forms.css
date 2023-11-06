@@ -8,7 +8,8 @@ form {
   margin-bottom: 1.5rem;
 }
 
-label {
+label,
+legend {
   display: block;
   font-size: 1.1rem;
   margin-bottom: 0.2em;
@@ -37,4 +38,35 @@ label {
 
 textarea {
   resize: vertical;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.field-hint {
+  color: var(--color-gray-600);
+  margin-bottom: 0.5em;
+}
+
+.radio-label {
+  background-color: var(--color-gray-200);
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  border: 1.5px solid transparent;
+}
+
+input[type="radio"] {
+  scale: 1.5;
+  margin-right: 0.5em;
+}
+
+.radio-label:hover {
+  border-color: var(--color-gray-400);
+}
+
+.radio-label:has(:checked) {
+  border-color: rgb(112, 112, 233);
 }

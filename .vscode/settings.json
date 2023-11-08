@@ -6,4 +6,5 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
+  //"workbench.colorTheme": "Default High Contrast"
 }
